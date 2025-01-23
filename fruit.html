@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit</title>
+    <link rel="stylesheet" href="css/fruit.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="shop_page.html">Home page</a> &gt; <a href="/fruit.html">Fruit</a>
+    </div>
+    <div class="container">
+        <br>
+        <div class="product">
+            <a href="fruits_html/water_melon.html">
+                <img src="fruit_imgs/xigua.jpeg" alt="Product Image" class="product-image">
+                <h3 class="product-name">Water Melon</h3>
+            </a>
+            <p class="product-price">$20</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="fruits_html/apple.html">
+                <img src="fruit_imgs/apple.jpg" alt="Product Image" class="product-image">
+                <h3 class="product-name">Apple</h3>
+            </a>
+            <p class="product-price">$10</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="fruits_html/banana.html">
+                <img src="fruit_imgs/banana.jpg" alt="Product Image" class="product-image">
+                <h3 class="product-name">Banana</h3>
+            </a>
+            <p class="product-price">$8</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="fruits_html/orange.html">
+                <img src="fruit_imgs/orange.jpg" alt="Product Image" class="product-image">
+                <h3 class="product-name">Orange</h3>
+            </a>
+            <p class="product-price">$12</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="fruits_html/cherry.html">
+                <img src="fruit_imgs/yingtao.webp" alt="Product Image" class="product-image">
+                <h3 class="product-name">Cherry</h3>
+            </a>
+            <p class="product-price">$25</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <a href="fruits_html/grape.html">
+                <img src="fruit_imgs/putao.webp" alt="Product Image" class="product-image">
+                <h3 class="product-name">Grape</h3>
+            </a>
+            <p class="product-price">$18</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="fixed-sidebar">
+        <a href="fruit.html" class="sidebar-link">Fruit</a>
+        <a href="#category2" class="sidebar-link">Vegetable</a>
+        <a href="#category3" class="sidebar-link">Meat</a>
+    </div>
+
+    <div class="hover-block">
+        <div class="hover-trigger">🛒</div> <!-- 触发悬停的图标 -->
+          <div class="hover-content">
+              <h3>Shopping List</h3>
+              <div class="cart-item">
+                  <label for="quantity1">Water Melon:</label>
+                  <input type="number" id="quantity1" name="quantity1" min="0" value="0">
+              </div>
+              <div class="cart-item">
+                  <label for="quantity2">Apple:</label>
+                  <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+              </div>
+              <div class="cart-item">
+                  <label for="quantity3">Banana:</label>
+                  <input type="number" id="quantity3" name="quantity3" min="0" value="0">
+              </div>
+              <div class="cart-item">
+                  <label for="quantity4">Orange:</label>
+                  <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+              </div>
+              <div class="cart-item">
+                  <label for="quantity5">Cherry:</label>
+                  <input type="number" id="quantity5" name="quantity5" min="0" value="0">
+              </div>
+              <div class="cart-item">
+                  <label for="quantity6">Grape:</label>
+                  <input type="number" id="quantity6" name="quantity6" min="0" value="0">
+              </div>
+              <button class="checkout-button">Checkout</button>
+          </div>
+      </div>
+</body>
+</html>

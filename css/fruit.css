@@ -1,0 +1,175 @@
+.container {
+    width: 60%; /* 设置容器宽度 */
+    height: px; /* 设置容器宽度 */
+    margin: 0; /* 水平居中 */
+    padding: 20px;
+    background-color: aqua; /* 背景颜色 */
+    display: flex;
+    flex-direction: row; /* 垂直排列子元素 */
+    align-items: flex-start; /* 水平居中对齐 */
+    border: 3px solid black;
+    margin-top: 20px;
+    flex-wrap:wrap;
+    
+}
+.breadcrumb {
+    font-size: 30px;
+    color: #333;
+    margin: 20px 0 20px 400px; /* 上、右、下、左外边距 */
+    padding: 10px; /* 内边距 */
+}
+.product {
+    width: 300px; /* 设置产品块的宽度 */
+    border: 1px solid #ddd; /* 添加边框 */
+    border-radius: 8px; /* 圆角边框 */
+    padding: 16px; /* 内边距 */
+    text-align: center; /* 内容居中对齐 */
+    background-color: #fff; /* 背景颜色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    margin-bottom: 20px; /* 设置产品之间的间距 */
+}
+
+.product-image {
+    width: 50%; /* 图片宽度占满容器 */
+    height: 300px; /* 高度自适应，保持图片比例 */
+    border-radius: 8px; /* 图片圆角 */
+}
+
+.product-name {
+    font-size: 18px; /* 字体大小 */
+    margin: 12px 0; /* 上下外边距 */
+    color: #333; /* 字体颜色 */
+}
+
+.product-price {
+    font-size: 16px; /* 字体大小 */
+    color: #007BFF; /* 价格颜色 */
+    margin: 8px 0; /* 上下外边距 */
+}
+
+.add-to-cart {
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none; /* 移除边框 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer; /* 鼠标指针样式 */
+    font-size: 14px; /* 字体大小 */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景颜色 */
+}
+
+/* styles.css */
+.fixed-sidebar {
+    position: fixed; /* 固定定位 */
+    top: 50%; /* 垂直居中 */
+    right: 20px; /* 距离右侧 20px */
+    transform: translateY(-50%); /* 垂直居中 */
+    background-color: #fff; /* 背景颜色 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 20px; /* 内边距 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+    gap: 15px; /* 链接之间的间距 */
+}
+
+.sidebar-link {
+    text-decoration: none; /* 移除下划线 */
+    color: #007BFF; /* 链接颜色 */
+    font-size: 30px; /* 字体大小 */
+    padding: 10px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s ease; /* 悬停效果过渡 */
+}
+
+.sidebar-link:hover {
+    background-color: #f0f0f0; /* 鼠标悬停时背景颜色 */
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 右上角的块 */
+.hover-block {
+    position: fixed; /* 固定定位 */
+    top: 20px; /* 距离顶部 20px */
+    right: 20px; /* 距离右侧 20px */
+    z-index: 1000; /* 确保在最上层 */
+}
+
+/* 触发悬停的图标 */
+.hover-trigger {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 悬停时显示的内容 */
+.hover-content {
+    display: none; /* 默认隐藏 */
+    position: absolute;
+    top: 50px; /* 距离触发图标下方 */
+    right: 0;
+    width: 250px; /* 设置宽度 */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 鼠标悬停时显示内容 */
+.hover-block:hover .hover-content {
+    display: block;
+}
+
+/* 购物列表项 */
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.cart-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.cart-item input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 结账按钮 */
+.checkout-button {
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}

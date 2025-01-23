@@ -1,0 +1,149 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation */  
+header {
+  align-items: center;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center; 
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.breadcrumb {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.product-detail {
+  text-align: center;
+}
+
+.product-detail img {
+  max-width: 400px;
+}
+
+.product-detail .description {
+  margin: 20px 0;
+  border: 1px solid #ddd; /* 添加边框 */
+}
+
+.product-detail .price {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-detail button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-detail button:hover {
+  background-color: #45a049;
+}
+/* 右上角的块 */
+.hover-block {
+  position: fixed; /* 固定定位 */
+  top: 20px; /* 距离顶部 20px */
+  right: 20px; /* 距离右侧 20px */
+  z-index: 1000; /* 确保在最上层 */
+}
+
+/* 触发悬停的图标 */
+.hover-trigger {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 悬停时显示的内容 */
+.hover-content {
+  display: none; /* 默认隐藏 */
+  position: absolute;
+  top: 50px; /* 距离触发图标下方 */
+  right: 0;
+  width: 250px; /* 设置宽度 */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 鼠标悬停时显示内容 */
+.hover-block:hover .hover-content {
+  display: block;
+}
+
+/* 购物列表项 */
+.cart-item {
+  margin-bottom: 10px;
+}
+
+.cart-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.cart-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 结账按钮 */
+.checkout-button {
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
